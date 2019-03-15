@@ -1,0 +1,143 @@
+body {
+    background-image: url('/images/GradientBackground.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav{
+    min-height: 40px;
+    background: black;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px 2px;
+}
+
+.container-fluid {
+    overflow: hidden;
+    height: 100vh;
+}
+
+/* Style the navigation bar */
+.navbar {
+    width: 100%;
+    background-color: #555;
+    overflow: auto;
+  }
+  
+  /* Navbar links */
+
+  
+  /* Navbar links on mouse-over */
+  .navbar a:hover {
+    background-color: #000;
+  }
+  
+  /* Current/active navbar link */
+  .active {
+    /* background-color: #4CAF50; */
+  }
+  
+  /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  }
+
+ 
+
+.rounded-circle {
+    width: 48px;
+    height: 48px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+i {
+    font-size: 22px;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    color: #0098a3
+}
+
+.nav-item {
+    display: inline-block;
+}
+
+.nav-link {
+    padding: 0.5rem 0.5rem;
+}
+
+.div-dashboard {
+    border-radius: 25px !important;
+  border-width: 1px !important;
+  border-style: solid !important;
+  border-color: white;
+  width: 90%;  /*Tested and working as expected: */
+  padding-top: 1%;
+  margin: 0px auto;
+  float: none;
+}
+
+#motorEfficiency {
+    -webkit-box-shadow: 0px 3px 15px 1px rgba(0,102,10,1);
+-moz-box-shadow: 0px 3px 15px 1px rgba(0,102,10,1);
+box-shadow: 0px 3px 15px 1px rgba(0,102,10,1);
+border-color: rgba(0,102,10,1);
+}
+
+#pumpEfficiency {
+    -webkit-box-shadow: 0px 3px 15px 1px  rgba(201,201,201,1);
+-moz-box-shadow: 0px 3px 15px 1px  rgba(201,201,201,1);
+box-shadow: 0px 3px 15px 1px  rgba(201,201,201,1);
+border-color:  rgba(201,201,201,1);
+}
+
+#plantAvailability {
+    -webkit-box-shadow: 0px 3px 15px 1px #c77824;
+-moz-box-shadow: 0px 3px 15px 1px  #c77824;
+box-shadow: 0px 3px 15px 1px  #c77824;
+border-color:  #c77824;
+}
+
+.dashboard-header{
+    font-size: 25px;
+    color: white;
+    margin-left: 20px;
+    padding: 0;
+}
+
+.table tr:hover{
+    color: orange;
+    background:rgba(10, 8, 12, 0.81)
+}
+
+.detail-div {
+    border-radius: 5px !important;
+  border-width: 1px !important;
+  border-style: solid !important;
+  border-color: #05a993 ;
+  padding-top: 1%;
+  margin: 0px auto;
+  float: none;
+}
+
+.spec-content {
+  color: white;
+  font-size: 20px;
+}
+
+.spec-detail {
+ padding-left: 20px;
+ padding-right: 20px;
+ vertical-align: middle;
+ padding-top: 5px;
+ padding-bottom: 5px;
+  /* display: inline-block; */
+  /* background: yellow;     */
+  border: 1px solid #05a993;
+  transform: skewX(10deg);
+  }
