@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="/stylesheets/all.css">
+  <!-- OWN CSS -->
+  <link rel="stylesheet" href="/stylesheets/MyCss/homePage.css">
+
+  <title>Homepage</title>
+</head>
+
+<body>
+  <div class="container-fluid px-0 mainclass">
+    <ul class="nav nav-tabs pl-4 fixed-top" role="tablist">
+      <li class="nav-item my-auto ml-5">
+        <a class="nav-link border rounded-circle" data-toggle="tooltip" data-placement="bottom" title="Back" href="/"><i
+            class="fas fa-arrow-left"></i></a>
+      </li>
+      <li class="nav-item my-auto">
+        <a class="nav-link active border rounded-circle" data-placement="left" title="Dashboard" data-toggle="tab"
+          href="#dashboard"><i class="fas fa-home"></i></a>
+      </li>
+      <li class="nav-item my-auto ">
+        <a class="nav-link border rounded-circle" data-toggle="tab" data-placement="left" title="Control & Chart"
+          href="#control_chart"><i class="far fa-list-alt"></i></a>
+      </li>
+      <li class="nav-item my-auto ">
+          <a class="nav-link border rounded-circle" data-toggle="tab" data-placement="left" title="Analyzer"
+            href="#analyzer"><i class="fas fa-chart-pie"></i></a>
+        </li>
+
+    </ul>
+
+    <!-- Tab content -->
+    <div class="tab-content" style="margin-top : 70px">
+      <!-- DASHBOARD PANEL -->
+      <div id="dashboard" class="container-fluid tab-pane active px-5"><br>
+        <div class="row px-2 mx-3">
+          <div class="col-sm my-4 mx-4 div-dashboard p-2" id="motorStatus">
+            <label class="text-white dashboard-header">Motor speed</label>
+            <div class=" box">
+              <div id="motorSpeedGauge" class="gauge"></div>
+            </div>
+          </div>
+
+          <div class="col-sm  my-4 mx-4 div-dashboard  p-2" id="waterLevel">
+            <p class="text-white dashboard-header">Water level</p>
+            <div class=" box">
+              <div id="levelGauge" class="gauge"></div>
+            </div>
+          </div>
+
+          <div class="col-sm  my-4 mx-4 div-dashboard  p-2" id="motorVibration">
+            <p class="text-white dashboard-header">Motor vibration</p>
+            <div class=" box">
+              <div id="vibrationGauge" class="gauge"></div>
+            </div>
+          </div>
+
+          <div class="col-sm  my-4 mx-4 div-dashboard  p-2" id="pipePressure">
+            <p class="text-white dashboard-header">Pipe pressure</p>
+            <div class=" box">
+              <div id="pressureGauge" class="gauge"></div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row div-dashboard mt-5 px-5 text-white"
+          style="max-height: 70%; font-size: 30px; padding: 20px ; width: 90%; border-color: #05a993 ; background: #181616 ; overflow: auto ">
+
+          <form class="form-inline" style="width : 100% ; display:inline-block">
+            <div class="form-group">
+              <label for="#inputFilter" class="mr-5" style="font-size:35px"><b>Notification List</b></label>
+              <input class="form-control" id="inputFilter" type="text" placeholder="Filter.." style="width:40%">
+            </div>
+          </form>
+
+          <table class="table text-white mt-4 ">
+            <thead style="color:#05a993">
+              <tr>
+                <th>Name</th>
+                <th>Value</th>
+                <th>Unit</th>
+                <th>Timestamp</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Speed</td>
+                <td>1200</td>
+                <td>RPM</td>
+                <td>03/20/2019</td>
+              </tr>
+              <tr>
+                <td>Level</td>
+                <td>3</td>
+                <td>m</td>
+                <td>03/19/2019</td>
+              </tr>
+              <tr>
+                <td>Pressure</td>
+                <td>2</td>
+                <td>BAR</td>
+                <td>03/21/2019</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- CONTROL AND CHART PANEL -->
+      <div id="control_chart" class="container-fluid tab-pane fade"><br>
+
+
+        <div class="row mt-4 px-5">
+          <div class="col-sm-5 px-4">
+            <div class="row text-white" style="border-radius:60px; border-width: 1px !important; border-style: solid !important; border-color: #05a993 ;padding: 1%;
+                margin: 0px auto;
+                float: none;">
+              <p class="my-auto mx-auto  py-auto" style="font-size:35px"><b>Motor BK-LAB</b></p>
+
+            </div>
+            <div class=" mx-auto" style="margin-top : 50px; margin-bottom : 50px">
+              <img src="/images/motor.png" height="180px" width="250px" style="margin:auto; display: block" alt="">
+            </div>
+            <div class="container" style="border-radius: 15px !important;
+                  border-width: 1px !important;
+                  border-style: solid !important;
+                  border-color: #05a993 ;padding-top: 1%;
+                  margin: 0px auto;
+                  float: none;
+                  background: #181616">
+              <div class="row px-3">
+                <p style="color:white ; font-size:30px ; margin-left: 20px; margin-bottom: 0px ; display: block">Product
+                  specifications</p>
+              </div>
+              <div class="row px-3 mb-2">
+                <div class="col-sm mx-4">
+                  <div class="row spec-detail my-4">
+                    <p class="spec-content mr-auto my-auto">Motor status</p>
+                    <p class="spec-content my-auto">ON</p>
+                  </div>
+
+                  <div class="row spec-detail my-4">
+                    <p class="spec-content mr-auto my-auto">Motor speed</p>
+                    <p class="spec-content my-auto mr-1">1200</p>
+                    <p class="spec-content my-auto">RPM</p>
+                  </div>
+
+                  <div class="row spec-detail my-4">
+                    <p class="spec-content mr-auto my-auto">Motor vibration</p>
+                    <p class="spec-content my-auto mr-1">4</p>
+                    <p class="spec-content my-auto">MM</p>
+                  </div>
+
+                  <div class="row spec-detail my-4">
+                    <p class="spec-content mr-auto my-auto">Water level</p>
+                    <p class="spec-content my-auto mr-1">1</p>
+                    <p class="spec-content my-auto">M</p>
+                  </div>
+
+                  <div class="row spec-detail my-4">
+                    <p class="spec-content mr-auto my-auto">Pipe pressure</p>
+                    <p class="spec-content my-auto mr-1">4</p>
+                    <p class="spec-content my-auto">BAR</p>
+                  </div>
+                </div>
+                <div class="col-sm mx-2">
+                  <div class=" spec-detail my-4 text-white spec-content ">
+                    Control
+                    <button class="btn btn-success btn-block btn-control my-3">RUN</button>
+                    <button class="btn btn-danger btn-block btn-control my-3">STOP</button>
+                    <form method="POST" class="mb-3">
+                      <div class="form-group">
+                        <label for="inputSetpoint">Setpoint</label>
+                        <input type="number" class="form-control btn-control" id="inputSetpoint">
+                      </div>
+
+                      <button type="submit " class="btn btn-primary ml-auto btn-block btn-control">Set speed</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-sm px-4">
+            <div class="detail-div text-white p-2" style="background:#181616">
+              <div class="row px-3">
+                <p style="color:white ; font-size:30px ; margin-left: 20px; margin-bottom: 0px ; display: block">Real
+                  time chart</p>
+              </div>
+              <div class="row px-4 my-3">
+                <!-- <form> -->
+                <div class="custom-control  custom-control-inline">
+                  <select id="selectChart" class="custom-select">
+                    <option value="speed" selected>Motor speed</option>
+                    <option value="vibration">Motor vibration</option>
+                    <option value="level">Water level</option>
+                    <option value="pressure">Pipe pressure</option>
+                  </select>
+                </div>
+                <!-- <div class="custom-control  custom-control-inline">
+                  <button class="btn btn-primary" id="btnUpdate">Update chart</button>
+                </div> -->
+                <!-- </form> -->
+              </div>
+              <div>
+                  <canvas id="speedChart" class="chart-canvas"></canvas>
+                  <canvas id="vibrationChart" class="chart-canvas" ></canvas>
+                  <canvas id="levelChart" class="chart-canvas" ></canvas>
+                  <canvas id="pressureChart" class="chart-canvas" ></canvas>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ANALYZER (HISTORICAL) PANEL -->
+      <div id="analyzer" class="container-fluid tab-pane fade py-auto px-5 "><br>
+        <div class="mt-4 mx-5" style="border-width: 1px !important;
+        border-radius: 5px;
+        border-style: solid !important;
+        border-color: #05a993 ;padding-top: 2px; padding-bottom: 2px;
+        margin: 0px auto;
+        background: linear-gradient(to right, #08a483 0%, #000404 108%);
+        float: none;
+        display: inline-block;">
+            <p class="my-auto mx-3 px-4 py-0 my-0" style="color:white ; font-size:30px ; display: block">Analyzer</p>
+          </div>
+        <div class=" mt-4 px-5" style="border-radius: 10px !important;
+        border-width: 1px !important;
+        border-style: solid !important;
+        border-color: #05a993 ;padding-top: 1%; padding-bottom: 1%;
+        margin: 0px auto;
+        float: none;
+        width: 95%;
+        background: #181616">
+       
+            <div class=" row custom-control  custom-control-inline">
+                <select id="selectAnalyzer" class="custom-select">
+                  <option value="speed" selected>Motor speed</option>
+                  <option value="vibration">Motor vibration</option>
+                  <option value="level">Water level</option>
+                  <option value="pressure">Pipe pressure</option>
+                </select>
+              </div>
+              <div class="custom-control custom-radio custom-control-inline text-center">
+                  <input type="radio" class="input-radio " id="customRadio" name="analyzerMode" value="0" checked>
+                  <label class=" text-white label-radio" for="customRadio">Now</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline text-center">
+                  <input type="radio" class=" input-radio" id="customRadio2" name="analyzerMode" value="1">
+                  <label class=" text-white label-radio" for="customRadio2">7 Day</label>
+                </div> 
+                <div class="custom-control custom-radio custom-control-inline text-center">
+                    <input type="radio" class=" input-radio" id="customRadio3" name="analyzerMode" value="2">
+                    <label class=" text-white label-radio" for="customRadio3">30 Day</label>
+                  </div> 
+
+                  <div class="mt-3" id="speedDiv">
+                    <p style="display:inline-block; font-size: 30px" class="text-white">Avarage RPM:</p>
+                    <p style="display:inline-block; font-size: 65px" class="ml-2 text-white">1200</p>
+                      <canvas id="analyzerSpeedNow" class="analyzer-chart" ></canvas>
+                      <canvas id="analyzerSpeedWeek" class="analyzer-chart" ></canvas>
+                      <canvas id="analyzerSpeedMonth" class="analyzer-chart" ></canvas>
+                  </div>
+                  <div class="mt-3" id="vibrationDiv">
+                      <p style="display:inline-block; font-size: 30px" class="text-white">Avarage MM:</p>
+                      <p style="display:inline-block; font-size: 65px" class="ml-2 text-white">1200</p>
+                        <canvas id="analyzerVibrationNow" class="analyzer-chart" ></canvas>
+                        <canvas id="analyzerVibrationWeek" class="analyzer-chart" ></canvas>
+                        <canvas id="analyzerVibrationMonth" class="analyzer-chart" ></canvas>
+                    </div>
+                    <div class="mt-3" id="levelDiv">
+                        <p style="display:inline-block; font-size: 30px" class="text-white">Avarage M:</p>
+                        <p style="display:inline-block; font-size: 65px" class="ml-2 text-white">1200</p>
+                          <canvas id="analyzerLevelNow" class="analyzer-chart" ></canvas>
+                          <canvas id="analyzerLevelWeek" class="analyzer-chart" ></canvas>
+                          <canvas id="analyzerLevelMonth" class="analyzer-chart" ></canvas>
+                      </div>
+                      <div class="mt-3" id="pressureDiv">
+                          <p style="display:inline-block; font-size: 30px" class="text-white">Avarage BAR:</p>
+                          <p style="display:inline-block; font-size: 65px" class="ml-2 text-white">1200</p>
+                            <canvas id="analyzerPressureNow" class="analyzer-chart" ></canvas>
+                            <canvas id="analyzerPressureWeek" class="analyzer-chart" ></canvas>
+                            <canvas id="analyzerPressureMonth" class="analyzer-chart" ></canvas>
+                        </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="/javascripts/jquery-3.3.1.min.js"></script>
+  <script src="/javascripts/popper.min.js"></script>
+  <script src="/javascripts/bootstrap.min.js"></script>
+  <!-- Just Gauge -->
+  <script src="/javascripts/raphael-2.1.4.min.js"></script>
+  <script src="/javascripts/justgage.js"></script>
+  <!-- Chart -->
+  <script src="/javascripts/moment.js"></script>
+  <script src="/javascripts/Chart.min.js"></script>
+  <script src="/javascripts/hammer.js"></script>
+  <script src="/javascripts/chartjs-plugin-zoom.js"></script>
+  <script src="/javascripts/chartjs-plugin-streaming.min.js"></script>
+  <!-- Own scripts -->
+  <script src="/javascripts/MyScripts/motor-bklab.js"></script>
+</body>
+
+</html>
